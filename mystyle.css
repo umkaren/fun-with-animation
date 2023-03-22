@@ -30,7 +30,9 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+#badum {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 .pawned {
     background-color: rgb(237, 252, 252, 75%);
     border: 4px groove;
@@ -38,6 +40,9 @@ body {
     padding: 20px;
     margin-top: 25px;
     margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px
 }
 .rotate {
     width: 30px;
@@ -116,7 +121,9 @@ body {
 .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-}
+    text-align: right;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /*Animation display for papa puns*/
