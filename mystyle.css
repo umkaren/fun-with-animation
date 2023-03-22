@@ -1,0 +1,155 @@
+/*nav bar diplay*/
+.menu {
+  background-color: rgb(253, 239, 131);
+  display: flex;
+  border: 1px solid rgb(253, 239, 131);
+  border-radius: 5px 
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+.top-menu {
+    border: 2px solid lightgoldenrodyellow;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: lightblue;
+}
+body {
+    background-image: url("https://i.etsystatic.com/isla/7fa038/26576237/isla_fullxfull.26576237_9w41qlka.jpg?version=0");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pawned {
+    background-color: rgb(237, 252, 252, 75%);
+    border: 4px groove;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.rotate {
+    width: 30px;
+    animation: rotation 3s infinite linear;
+    }
+
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+/*Sectional Display for main page*/
+.container, .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+      
+.column {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 90px;
+    margin-right: 10px;
+    background-color: rgb(253, 239, 131, 75%);
+    border: 4px solid #e1b122;
+    border-radius: 20px;
+    justify-content: center;
+    align-content: center;
+    color:#487292
+    }
+
+.left {
+    flex: 1;
+    }
+          
+.right {
+    flex: 1;
+}
+
+/*Animation for each main section*/
+.roll-in-left {
+    -webkit-animation: roll-in-left 0.6s ease-out both;
+            animation: roll-in-left 0.6s ease-out both;
+    }
+
+ @-webkit-keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+/*Sectional display for papa puns*/
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+}
+
+/*Animation display for papa puns*/
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+
+footer {
+    margin-top: auto;
+    background-color: rgb(152, 212, 212, 60%);
+    border: 1px solid lightblue;
+    border-radius: 5px;
+  }
